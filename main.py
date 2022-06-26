@@ -19,7 +19,7 @@ def simulate():
     number_of_servers = 4
     max_rate_of_server = 5000
     frecuency = 0.05
-    time_period = 300
+    time_period = 1000
     offset = 10000
     amplitude = 5000
     rescale_time = 5
@@ -86,5 +86,32 @@ def simulate():
     plt.show()# Press Ctrl+F8 to toggle the breakpoint.
 
 
+def cos():
+    time = []
+    cos= []
+    time_period = 1000
+    frequency = 0.01
+
+    amplitude = 5000
+
+    for t in range(1, time_period):
+         #m = amplitude * math.cos(frequency * t)
+        m=  math.cos(frequency * t)
+        time.append(t)
+        cos.append(m)
+    plt.plot(time, cos,
+             label="time cosine")
+
+    plt.xticks()
+    plt.xlabel('time (min)')
+    plt.ylabel('events lag')
+    plt.title('A cosine workload ')
+    # plt.grid()
+    plt.legend()
+    plt.show()
+
+
 if __name__ == '__main__':
-    simulate()
+    #simulate()
+    cos()
+
