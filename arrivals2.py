@@ -56,8 +56,8 @@ def random_walk(time, query):
 
 def main():
     experiment_time = 140
-    #queries = ["query-1", "query-3", "query-11"]
-    queries = ["query-1"]
+    queries = ["query-1", "query-3", "query-11"]
+    #queries = ["query-1"]
 
 
     for query in queries:
