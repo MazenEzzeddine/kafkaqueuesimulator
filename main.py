@@ -424,14 +424,14 @@ if __name__ == '__main__':
     #simulate()
     #workload()
     #workload3()
-    #workload4()
+    workload4() ### this
     #workload5()
 
 
 
     #work2()
     #workload2()
-    workload6()
+    #workload6()
 
     #pplot()
 
